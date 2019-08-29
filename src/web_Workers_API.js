@@ -1,0 +1,1 @@
+addEventListener('message', ({data}) => setTimeout(() => postMessage(data.value * 2), data.timeout), false);

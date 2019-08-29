@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./web_Workers_API.css" />
+</head>
+<body>
+  <h4>使用 worker 线程计算结果 </h4>
+  <input type="number" placeholder="0" />
+  <span>&nbsp;*&nbsp;2&nbsp;=&nbsp;</span>
+  <span class="value">0</span>
+  <script>
+    const worker = new Worker('./web_Workers_API.js');
+    const inputElement = document.querySelector('input');
+    const spanElement = document.querySelector('.value');
+    const timeout = 5000;
+    inputElement.addEventListener('blur', () => {
+      inputElement.disabled = true;
+      worker.postMessage({
+        value: inputElement.valueAsNumber || 0,
+        timeout,
+      });
+    }, false);
+    worker.onmessage = e => {
+      spanElement.textContent = e.data;
+      inputElement.disabled = false;
+    };
+  </script>
+</body>
+</html>

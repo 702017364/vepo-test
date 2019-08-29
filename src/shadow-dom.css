@@ -1,0 +1,28 @@
+f-calc{
+  display: block;
+}
+
+.custom-element{
+  margin-bottom: .5em;
+}
+
+/* shadow dom */
+.wrap{
+  display: flex;
+}
+
+.wrap > span{
+  width: 1em; text-align: center;
+}
+
+:host{
+  font-size: 1.5em;
+}
+
+:host(div){
+  color: #f00;
+}
+
+:host-context(f-calc){
+  color: #00f;
+}

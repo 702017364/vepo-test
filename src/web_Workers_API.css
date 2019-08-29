@@ -1,0 +1,16 @@
+input:disabled ~ .value{
+  position: relative; color: transparent;
+}
+
+input:disabled ~ .value::after{
+  position: absolute; top: 0; left: 0; content: '.'; animation: 3s wait step-end infinite; color: #333;
+}
+
+@keyframes wait{
+  33.3%{
+    content: '..';
+  }
+  66.7%{
+    content: '...';
+  }
+}
