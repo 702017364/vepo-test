@@ -1,12 +1,12 @@
-@import '../node_modules/@vope/scss/sass/test.scss';
+@import '../node_modules/@vope/scss/sass/main.scss';
 
 .api{
   &-wrap{
-    --flex-basis: 20vw;
+    --api-basis: 20vw;
     --api-spac: 16px;
 
     $this-bgleft: fcalc-list(
-      (--flex-basis, --api-spac),
+      (--api-basis, --api-spac),
       (1, 4),
       (1, 0)
     );
@@ -19,10 +19,29 @@
   }
 
   &-directory{
-    margin-right: var(--api-spac); box-sizing: border-box; flex-basis: var(--flex-basis); align-self: flex-start;
+    --api-column-spac: .5em;
+
+    $this-left: fcalc-single(--api-column-spac, -2);
+    $this-top: fcalc-single(--api-column-spac, .6, 1);
+
+    padding-left: $this-left; margin-right: var(--api-spac); font-size: f2all(14px); line-height: 1; display: flex; flex-wrap: wrap; flex-basis: var(--api-basis); box-sizing: border-box; align-self: flex-start;
+
+    > dt{
+      $this-bottom: fcalc-single($this-top, -1);
+
+      width: 100%; margin: 0 0 $this-bottom var(--api-column-spac); font-size: 1.2em; line-height: 1.7;
+    }
+
+    > dd{
+      margin: $this-top 0 0 var(--api-column-spac); padding: .6em .4em; border-radius: .8em; transition: .3s box-shadow; cursor: pointer;
+
+      &.active, &:hover{
+        box-shadow: inset 0 0 4px;
+      }
+    }
   }
 
   &-frame{
-    flex: 1; resize: none;
+    display: block; flex: 1; resize: none;
   }
 }
