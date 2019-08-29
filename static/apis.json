@@ -1,0 +1,52 @@
+[
+  {
+    "label": "API",
+    "list": [
+      {
+        "label": "窗口通信API",
+        "value": "Broadcast_Channel_API"
+      },
+      {
+        "label": "窗口通信API",
+        "value": "Channel_Messaging_API"
+      },
+      {
+        "label": "页面可见性API",
+        "value": "Page_Visibility_API"
+      },
+      {
+        "label": "全屏API",
+        "value": "Pointer_Lock_API"
+      },
+      {
+        "label": "worker线程API",
+        "value": "Web_Workers_API"
+      }
+    ]
+  },
+  {
+    "label": "其他",
+    "list": [
+      {
+        "label": "jspdf（网页转pdf）示例",
+        "value": "pdf"
+      },
+      {
+        "label": "自定义jsonp请求",
+        "value": "jsonp"
+      },
+      {
+        "label": "three.js 示例",
+        "value": "three"
+      },
+      {
+        "label": "WebSocket（服务器通信）示例",
+        "value": "web-socket"
+      },
+      {
+        "label": "HTML5 自定义元素",
+        "value": "shadow-dom"
+      }
+    ]
+  }
+]
