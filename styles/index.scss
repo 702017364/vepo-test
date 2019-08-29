@@ -1,0 +1,28 @@
+@import '../node_modules/@vope/scss/sass/test.scss';
+
+.api{
+  &-wrap{
+    --flex-basis: 20vw;
+    --api-spac: 16px;
+
+    $this-bgleft: fcalc-list(
+      (--flex-basis, --api-spac),
+      (1, 4),
+      (1, 0)
+    );
+
+    $this-bgsizex: fcalc-single(--api-spac, 2);
+
+    --api-bgsize-x: #{$this-bgsizex};
+
+    height: 100vh; display: flex; background: linear-gradient(currentColor, currentColor) #{$this-bgleft} 0 / var(--api-bgsize-x) 100% no-repeat;
+  }
+
+  &-directory{
+    margin-right: var(--api-spac); box-sizing: border-box; flex-basis: var(--flex-basis); align-self: flex-start;
+  }
+
+  &-frame{
+    flex: 1; resize: none;
+  }
+}

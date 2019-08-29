@@ -21,6 +21,7 @@
     "node-sass": "^4.12.0"
   },
   "dependencies": {
+    "@vope/scss": "^2.0.6-bate.3",
     "html2canvas": "^1.0.0-rc.3",
     "jspdf": "^1.5.3",
     "nodejs-websocket": "^1.7.2",
