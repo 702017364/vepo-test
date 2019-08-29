@@ -8,7 +8,6 @@ const frame = document.createElement('iframe');
 
 wrap.classList.add('api-wrap');
 directory.classList.add('api-directory')
-directory.classList.add('isolation');
 frame.classList.add('api-frame');
 
 const appendChild = (tag, {value, label}, parent) => {

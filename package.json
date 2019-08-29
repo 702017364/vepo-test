@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "dev": "babel-node node/libs.js & gulp",
-    "copy": "babel-node node/copy.js"
+    "copy": "babel-node node/copy.js",
+    "unique": "babel-node node/clear-duplicate.js",
+    "delete": "babel-node node/delete-folder.js"
   },
   "author": "@vope",
   "license": "ISC",
@@ -24,6 +26,7 @@
     "@vope/scss": "^2.0.6-bate.3",
     "html2canvas": "^1.0.0-rc.3",
     "jspdf": "^1.5.3",
+    "md5": "^2.2.1",
     "nodejs-websocket": "^1.7.2",
     "three": "^0.108.0"
   }
