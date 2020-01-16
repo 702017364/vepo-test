@@ -1,6 +1,6 @@
 document.querySelector('button').addEventListener('click', function(){
   this.disabled = true;
-  const ws = new WebSocket('ws://localhost:9990');
+  const ws = new WebSocket('ws://localhost:8823');
   let logError = false;
   ws.onopen = e => {
     console.log('连接服务器成功');
