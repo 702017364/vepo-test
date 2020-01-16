@@ -1,6 +1,6 @@
 [
   {
-    "label": "API",
+    "label": "HTML5",
     "list": [
       {
         "label": "窗口通信API",
@@ -21,11 +21,28 @@
       {
         "label": "worker线程API",
         "value": "Web_Workers_API"
+      },
+      {
+        "label": "WebSocket（服务器通信）示例",
+        "value": "web-socket"
+      },
+      {
+        "label": "HTML5 自定义元素",
+        "value": "shadow-dom"
       }
     ]
   },
   {
-    "label": "其他",
+    "label": "CSS",
+    "list": [
+      {
+        "label": "offset",
+        "value": "offset"
+      }
+    ]
+  },
+  {
+    "label": "default",
     "list": [
       {
         "label": "jspdf（网页转pdf）示例",
@@ -38,14 +55,6 @@
       {
         "label": "three.js 示例",
         "value": "three"
-      },
-      {
-        "label": "WebSocket（服务器通信）示例",
-        "value": "web-socket"
-      },
-      {
-        "label": "HTML5 自定义元素",
-        "value": "shadow-dom"
       }
     ]
   }

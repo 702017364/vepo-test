@@ -12,6 +12,6 @@ const server = ws.createServer(conn => {
       console.log('连接被关闭');
     });
   });
-}).listen(9990);
+}).listen(8823);
 
 module.exports = server;

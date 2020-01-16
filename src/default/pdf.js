@@ -16,7 +16,7 @@ document.querySelector('button').addEventListener('click', async () => {
   const pdf1 = new jsPDF(option);
   await new Promise((resolve, reject) => {
     const img = new Image();
-    img.src = './images/foreignObject.png';
+    img.src = '/src/images/foreignObject.png';
     img.onload = function(){
       pdf1.addImage(img, 'png', 0, 0, img.width, img.height, null);
       resolve();
@@ -27,7 +27,7 @@ document.querySelector('button').addEventListener('click', async () => {
   const pdf2 = new jsPDF(option);
   await new Promise((resolve, reject) => {
     const img = new Image();
-    img.src = './images/foreignObject.png';
+    img.src = '/src/images/foreignObject.png';
     img.onload = () => {
       const canvas = document.createElement('canvas');
       canvas.width = img.width;
