@@ -21,7 +21,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.0.2",
     "minimist": "^1.2.0",
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "@vope/scss": "^2.4.2",
