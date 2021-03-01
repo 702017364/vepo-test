@@ -30,6 +30,6 @@
     "md5": "^2.2.1",
     "nodejs-websocket": "^1.7.2",
     "superagent": "^5.2.1",
-    "three": "^0.108.0"
+    "three": "^0.125.0"
   }
 }
